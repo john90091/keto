@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Keto Kickstart Package - Free Trial</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- FontAwesome Icons CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts Inter -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+    
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            /* Bright sunny sky and golden clouds background */
+            background: linear-gradient(to bottom, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0.05)), 
+                        url('https://images.unsplash.com/photo-1513002749550-c59d786b8e6c?q=80&w=1920&auto=format&fit=crop');
+            background-size: cover;
+            background-position: center top;
+            background-attachment: fixed;
+            min-height: 100vh;
+        }
+
+        /* Animated striped progress bar */
+        .progress-striped {
+            background-image: linear-gradient(
+                135deg,
+                rgba(255, 255, 255, 0.3) 25%,
+                transparent 25%,
+                transparent 50%,
+                rgba(255, 255, 255, 0.3) 50%,
+                rgba(255, 255, 255, 0.3) 75%,
+                transparent 75%,
+                transparent
+            );
+            background-size: 2rem 2rem;
+            animation: progress-move 2s linear infinite;
+        }
+
+        @keyframes progress-move {
+            0% { background-position: 0 0; }
+            100% { background-position: 2rem 0; }
+        }
+
+        /* Octagon STOP Hand Badge */
+        .stop-sign {
+            width: 72px;
+            height: 72px;
+            background-color: #d90429;
+            clip-path: polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+            border: 3px solid #ffffff;
+            flex-shrink: 0;
+        }
+
+        /* High conversion orange CTA button styling */
+        .btn-orange-cta {
+            background: linear-gradient(180deg, #ff9f00 0%, #ff7700 50%, #e65c00 100%);
+            border: 1px solid #cc5200;
+            box-shadow: 0 6px 16px rgba(230, 92, 0, 0.45), inset 0 1px 0 rgba(255, 255, 255, 0.6);
+            transition: all 0.2s ease-in-out;
+        }
+
+        .btn-orange-cta:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 22px rgba(230, 92, 0, 0.55), inset 0 1px 0 rgba(255, 255, 255, 0.7);
+            background: linear-gradient(180deg, #ffaa14 0%, #ff8000 50%, #f06300 100%);
+        }
+
+        .btn-orange-cta:active {
+            transform: translateY(1px);
+            box-shadow: 0 3px 8px rgba(230, 92, 0, 0.4);
+        }
+
+        /* 60 Days Guarantee Gold Badge */
+        .gold-seal {
+            background: radial-gradient(circle, #fce055 0%, #dfac16 70%, #a37200 100%);
+            border-radius: 50%;
+            border: 3px dashed #7a5400;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+        }
+    </style>
+</head>
+<body class="py-6 md:py-12 px-3 sm:px-4">
+
+    <!-- Central Card Layout -->
+    <main class="max-w-[860px] mx-auto bg-white/95 backdrop-blur-md rounded-lg shadow-2xl overflow-hidden border border-white/80">
+        
+        <!-- Top Progress Bar -->
+        <div class="w-full bg-gray-200 h-7 overflow-hidden relative">
+            <div class="bg-red-600 h-full w-[50%] progress-striped flex items-center justify-center text-white text-xs sm:text-sm font-bold tracking-wide">
+                50% Complete...
+            </div>
+        </div>
+
+        <!-- Warning Section -->
+        <div class="p-4 sm:p-6 md:p-8 text-center sm:text-left flex flex-col sm:flex-row items-center gap-4 sm:gap-6 border-b border-gray-100">
+            <!-- Red Stop Sign Icon -->
+            <div class="stop-sign">
+                <i class="fa-solid fa-hand text-white text-3xl"></i>
+            </div>
+            
+            <!-- Headline Text -->
+            <div class="text-gray-900 leading-snug sm:leading-relaxed">
+                <h1 class="text-lg sm:text-xl md:text-2xl font-extrabold tracking-tight">
+                    <span class="bg-yellow-300 px-1.5 py-0.5 rounded text-black font-black uppercase mr-1">IMPORTANT:</span>
+                    Watch This Video In Full Right Now. Your Access Link To Download Your Keto Recipes Will Appear At The <span class="underline decoration-2 underline-offset-4 decoration-black">End Of Your Video.</span>
+                </h1>
+            </div>
+        </div>
+
+        <!-- Main Video Container -->
+        <!-- Main Video Container -->
+        <div class="p-2 sm:p-4 bg-gray-50/80">
+            <div class="relative w-full aspect-video bg-black rounded overflow-hidden shadow-lg" id="main-video-player">
+                <iframe 
+                    class="w-full h-full border-0" 
+                    src="https://www.youtube.com/embed/HBuqI_IMsSY?rel=0&autoplay=0" 
+                    title="Keto Recipes | Claudia Caldwell" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                    allowfullscreen>
+                </iframe>
+            </div>
+        </div>
+
+        <!-- Red Package Banner -->
+        <div class="bg-red-600 text-white font-black text-center py-3.5 px-4 text-base sm:text-xl md:text-2xl shadow-inner">
+            Get Ready To Download Your Keto Kickstart Package...
+        </div>
+
+        <!-- Date Expiration Subtitle -->
+        <div class="text-center py-3 text-gray-800 text-sm sm:text-base font-semibold">
+            Your Recipes Can't Be Guaranteed Past <span id="dynamic-date" class="text-red-600 font-bold">Sep 22, 2026</span>
+        </div>
+
+        <!-- Divider -->
+        <div class="text-center text-gray-400 font-medium text-sm my-1">
+            - or -
+        </div>
+
+<!-- Call To Action Button Section -->
+        <div class="px-4 sm:px-10 py-4 text-center">
+            <a href="https://www.digistore24.com/product/283755?aff=Cimixs" 
+               target="_blank" 
+               rel="noopener noreferrer" 
+               class="btn-orange-cta w-full max-w-[650px] py-4 px-4 sm:px-8 rounded-lg text-white font-extrabold text-xl sm:text-2xl md:text-3xl flex items-center justify-center gap-3 sm:gap-4 mx-auto tracking-tight cursor-pointer no-underline block">
+                <i class="fa-solid fa-cart-shopping text-2xl sm:text-3xl"></i>
+                <div class="flex flex-col text-left sm:text-center">
+                    <span class="drop-shadow-sm">YES! I Want To Start My Free TRIAL</span>
+                    <span class="text-yellow-100 font-normal text-xs sm:text-base opacity-95">Pay $0 now, and $29 after 7 days</span>
+                </div>
+            </a>
+        </div>
+        <!-- Guarantee Badge Box -->
+        <div class="px-4 sm:px-12 py-6">
+            <div class="border border-gray-300 rounded-lg p-4 sm:p-6 flex flex-col sm:flex-row items-center gap-4 sm:gap-6 bg-white shadow-sm">
+                <!-- Gold Guarantee Icon -->
+                <div class="gold-seal w-24 h-24 sm:w-28 sm:h-28 flex-shrink-0 flex flex-col items-center justify-center text-center p-2 text-yellow-950 font-black leading-tight">
+                    <span class="text-xs uppercase font-extrabold tracking-tighter">Money Back</span>
+                    <span class="text-2xl sm:text-3xl font-black">60</span>
+                    <span class="text-[10px] uppercase font-bold tracking-widest">DAYS</span>
+                    <span class="text-[8px] uppercase tracking-tighter">ASSURED</span>
+                </div>
+                
+                <!-- Guarantee Description -->
+                <div class="text-gray-700 text-xs sm:text-sm leading-relaxed text-center sm:text-left">
+                    Rest easy knowing that all purchases are backed by our <strong class="text-gray-900 font-bold">60-day money-back guarantee</strong>. If for any reason you're not satisfied with your product, simply contact us at <a href="mailto:info@cj-caldwell.com" class="text-gray-900 font-bold underline hover:text-red-600 transition-colors">info@cj-caldwell.com</a> for a hassle-free refund.
+                </div>
+            </div>
+        </div>
+
+        <!-- Testimonials Section -->
+        <div class="bg-gray-50/90 pt-8 pb-10 px-4 border-t border-gray-200/80">
+            <h2 class="text-xl sm:text-2xl md:text-3xl font-black text-gray-900 text-center mb-6 tracking-tight">
+                What Other People Say About Our Meal Plan:
+            </h2>
+
+<!-- Main Video Container -->
+<div class="p-2 sm:p-4 bg-gray-50/80">
+    <div class="relative w-full aspect-video bg-black rounded overflow-hidden shadow-lg" id="main-video-player">
+        <iframe 
+            class="w-full h-full border-0" 
+            src="https://www.youtube.com/embed/uwYORpC_oOk" 
+            title="Video Player"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+            allowfullscreen>
+        </iframe>
+    </div>
+</div>
+
+</div>
+        </div>
+
+        <!-- Footer -->
+        <footer class="bg-gray-100 py-4 text-center text-xs text-gray-500 border-t border-gray-200 px-4">
+            <p>© <span id="year">2026</span> Keto Kickstart Package. All rights reserved.</p>
+        </footer>
+
+    </main>
+
+    <script>
+        // Set dynamic tomorrow date for scarcity effect
+        function updateDynamicDate() {
+            const dateElement = document.getElementById('dynamic-date');
+            if (!dateElement) return;
+
+            const today = new Date();
+            const targetDate = new Date(today);
+            targetDate.setDate(today.getDate() + 1);
+
+            const options = { month: 'short', day: 'numeric', year: 'numeric' };
+            const formattedDate = targetDate.toLocaleDateString('en-US', options);
+            
+            dateElement.textContent = formattedDate;
+        }
+
+        // Set dynamic copyright year
+        function updateYear() {
+            const yearElement = document.getElementById('year');
+            if (yearElement) {
+                yearElement.textContent = new Date().getFullYear();
+            }
+        }
+
+        // Action simulator for CTA button
+        function handleCheckout() {
+            const button = event.currentTarget;
+            button.style.transform = "scale(0.98)";
+            setTimeout(() => {
+                button.style.transform = "";
+                alert("Redirecting to 7-Day Free Trial Checkout Page...");
+            }, 150);
+        }
+
+        // Initialize elements on DOM load
+        window.addEventListener('DOMContentLoaded', () => {
+            updateDynamicDate();
+            updateYear();
+
+            // Video player click simulations
+            document.getElementById('main-video-player')?.addEventListener('click', () => {
+                alert("Playing Main Video Sales Letter (VSL)...");
+            });
+
+            document.getElementById('testimonial-video-player')?.addEventListener('click', () => {
+                alert("Playing Customer Testimonial Video...");
+            });
+        });
+    </script>
+</body>
+</html>
